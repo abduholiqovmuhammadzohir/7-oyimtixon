@@ -1,0 +1,237 @@
+.header {
+    background-color: #141414;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: aliceblue;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 165px;
+    padding-right: 165px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title h3 {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 10px;
+    color: #a3a1a1;
+    margin-bottom: 24px;
+}
+
+.title h2 {
+    font-family: Manrope;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    width: 396px;
+}
+
+.title p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+    color: #a3a1a1;
+    width: 349px;
+}
+
+.title button {
+    width: 160px;
+    height: 48px;
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    background-color: #D87D4A;
+    color: white;
+    border: none;
+    transition: all 0.5s;
+}
+
+.title button:hover {
+    background-color: #fbaf85;
+    cursor: pointer;
+}
+
+.home_img {
+    background-image: url(../../assets/Headphones.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+.medium {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    border-radius: 10px;
+    padding-left: 117px;
+    padding-right: 95px;
+    background-color: #D87D4A;
+    color: white;
+    padding-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.medium_title {
+    margin-top: 37px;
+}
+
+.medium_title h2 {
+    font-family: Manrope;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    width: 261px;
+    margin-bottom: 24px;
+}
+
+.medium_title p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    width: 349px;
+    color: #fcf6f6;
+    margin-bottom: 40px;
+}
+
+
+.medium_title button {
+    width: 160px;
+    height: 48px;
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    background-color: #141414;
+    color: white;
+    border: none;
+    transition: all 0.5s;
+}
+
+.medium_title button:hover {
+    background-color: #4C4C4C;
+    cursor: pointer;
+}
+
+.mask {
+    background-image: url(../../assets/bitmap.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 1110px;
+    border-radius: 10px;
+    padding-top: 101px;
+    padding-left: 95px;
+    padding-bottom: 101px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.mask h1 {
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+
+.mask button {
+    width: 160px;
+    height: 48px;
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.5s;
+    background-color: #CDCDCD;
+}
+
+.mask button:hover {
+    background-color: #141414;
+    color: white;
+    cursor: pointer;
+}
+
+.earphones {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.earphones_title {
+    background-color: #F1F1F1;
+    width: 540px;
+    border-radius: 10px;
+    padding-left: 95px;
+    padding-top: 101px;
+    padding-bottom: 101px;
+}
+
+.earphones_title h1 {
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+
+.earphones_title button {
+    width: 160px;
+    height: 48px;
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: black;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+
+.earphones_title button:hover {
+    background-color: #141414;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_link {
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #141414;
+}
+
+.btn_link:hover {
+    color: white;
+}

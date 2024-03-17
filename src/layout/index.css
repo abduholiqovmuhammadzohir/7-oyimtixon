@@ -1,0 +1,152 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.modal_content {
+  margin-top: -180px;
+  margin-left: 820px;
+  width: 377px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close_modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+  margin-top: 32px;
+}
+
+.title h3 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.2857142686843872px;
+}
+
+.title p {
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.title1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-top: 32px;
+}
+
+.title1 h3 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.2857142686843872px;
+}
+
+.title1 p {
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+
+.modal_content .chek{
+  width: 100%;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #D87D4A;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: all 0.5s;
+  margin-bottom: 15px;
+}
+
+.modal_content .chek:hover {
+  cursor: pointer;
+  background-color: #fbaf85;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart1 {
+  display: flex;
+  align-items: center;
+}
+
+.cart1 h2 {
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  margin-left: 16px;
+}
+
+.cart1 h4 {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+  margin-left: 16px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.btn{
+  display: flex;
+  gap: 12px;
+  padding: 7px 11px;
+  border: none;
+}

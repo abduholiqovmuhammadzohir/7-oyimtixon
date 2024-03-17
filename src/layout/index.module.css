@@ -1,0 +1,158 @@
+.menus {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #141414;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    margin-right: 34px;
+    text-decoration: none;
+    color: white;
+    font-family: "Manrope" sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    color: #D87D4A;
+}
+
+.icon {
+    display: flex;
+}
+
+.menus hr {
+    color: #313030;
+    margin-top: 36px;
+}
+
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color:#141414;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 75px;
+    padding-bottom: 48px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_text p {
+    width: 540px;
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-top: 36px;
+    color: #d1cece;
+    margin-bottom: 56px;
+}
+
+.footer_text h3 {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #d1cece;
+}
+
+.footer_link{
+    margin-right: 34px;
+    text-decoration: none;
+    color: white;
+    font-family: "Manrope" sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+
+.footer_link:hover {
+    color: #D87D4A;
+}
+
+.footer_linke{
+     text-decoration: none;
+    color: white;
+    font-family: "Manrope" sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+
+.footer_linke:hover {
+    color: #D87D4A;
+}
+
+.footer_icon{
+    margin-left:346px;
+}
+
+.footer_icon img{
+    width: 24px;
+    height: 24px;
+    margin-top: 105px;
+}
+
+.footer_icon img:hover{
+    cursor: pointer;
+}
+
+
+.audio {
+    padding-bottom: 200px;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.audio_title h2 {
+    font-family: Manrope;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1.4285714626312256px;
+    text-align: left;
+    width: 445px;
+    margin-bottom: 32px;
+}
+
+.audio_title h2 span {
+    color: #D87D4A;
+}
+
+.audio_title p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    width: 445px;
+}
