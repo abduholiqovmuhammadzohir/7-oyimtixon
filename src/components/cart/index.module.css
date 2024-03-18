@@ -54,3 +54,17 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+    .carts{
+        display: flex;
+        flex-direction: column;
+        max-width:600px;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .cart{
+        margin-bottom: 200px;
+    }
+  }
+

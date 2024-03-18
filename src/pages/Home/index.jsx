@@ -12,13 +12,13 @@ function Home() {
   const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/headphones');
+        navigate('/headphones1');
     };
     const handleSpek = () => {
-        navigate('/speakers');
+        navigate('/speakers1');
     };
     const handleEar = () => {
-        navigate('/earphones');
+        navigate('/earphones1');
     };
 
 

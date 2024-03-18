@@ -24,7 +24,6 @@ function App() {
   const location = useLocation()
 
   useEffect(() => {
-    console.log(21, location);
     if (!localStorage.getItem("token") && location.pathname != "/register") {
       navigate("/login")
     }
