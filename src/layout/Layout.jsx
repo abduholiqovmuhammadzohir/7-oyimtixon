@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import styles from "./index.module.css"
 import audio from "../assets/audio.svg"
 import { SlBasket } from "react-icons/sl";
@@ -32,6 +32,13 @@ function Layout({ children }) {
             dispatch({ type: "REMOVE", payload: 1 })
         }
     }
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/checkout');
+    };
+
 
     return (
         <div>
@@ -89,7 +96,7 @@ function Layout({ children }) {
                                 <p>TOTAL</p>
                                 <h3>$ 5,396</h3>
                             </div>
-                            <button className='chek'><Link style={{ textDecoration: "none", color: "white" }} to="/checkout">CHECKOUT</Link></button>
+                            <button onClick={handleClick} className='chek' >CHECKOUT</button>
                         </div>
                     </div>
 

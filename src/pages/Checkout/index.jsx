@@ -3,9 +3,11 @@ import styles from "./index.module.css"
 import img from "../../assets/imgmk.png"
 import img1 from "../../assets/imgmk1.png"
 import img2 from "../../assets/imgmk2.png"
-import { Link } from "react-router-dom"
+import total from "../../assets/total.png"
 import "./index.css"
 import { useState } from "react"
+import image from "../../assets/img8.png" 
+import { useNavigate } from "react-router-dom"
 
 function Checkout() {
 
@@ -15,6 +17,11 @@ function Checkout() {
     setModal(!modal)
   }
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/');
+  };
 
   return (
 
@@ -24,9 +31,16 @@ function Checkout() {
           <div className="order">
             <div onClick={toggleModal}>e</div>
             <div className="order_content">
-              <div onClick={toggleModal} style={{ cursor: "pointer" }}>X</div>
-              
-              <button className='chek'><Link style={{ textDecoration: "none", color: "white" }} to="/">BACK TO HOME</Link></button>
+              <div onClick={toggleModal} className="x">X</div>
+              <img src={image} alt="" style={{marginBottom:"33px"}}/>
+              <h1>THANK YOU FOR YOUR ORDER</h1>
+              <h4>You will receive an email confirmation shortly.</h4>
+
+              <div className="total">
+                <img src={total} alt="" />
+              </div>
+
+              <button onClick={handleClick} className='chek'>BACK TO HOME</button>
             </div>
           </div>
 
@@ -150,7 +164,7 @@ function Checkout() {
                 <h3>GRAND TOTAL</h3>
                 <h4>$ 5,446</h4>
               </div>
-              <button className={styles.chek} onClick={toggleModal}>CONTINUE & PAY</button>
+              <button className={styles.chek} onClick={toggleModal} >CONTINUE & PAY</button>
             </div>
           </div>
         </div>
