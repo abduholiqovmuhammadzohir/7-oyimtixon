@@ -22,7 +22,7 @@
 }
 
 .modal_content {
-  margin-top: -180px;
+  margin-top: 110px;
   margin-left: 820px;
   width: 377px;
   background-color: #fff;
@@ -118,6 +118,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .cart1 {

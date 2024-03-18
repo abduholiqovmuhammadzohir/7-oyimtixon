@@ -8,6 +8,7 @@ import mark1 from "../../assets/mark1.png"
 import mark2 from "../../assets/mark2.png"
 import { Link } from "react-router-dom"
 import Cart from "../../components/cart"
+import Homes from "../../components/homes"
 
 function HEADPHONES() {
   return (
@@ -51,6 +52,7 @@ function HEADPHONES() {
       </div>
 
       <Cart></Cart>
+      <Homes></Homes>
     </div>
   )
 }

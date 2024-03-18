@@ -4,6 +4,7 @@ import mask1 from "../../assets/mask1.png"
 
 import { Link } from "react-router-dom"
 import Cart from "../../components/cart"
+import Homes from "../../components/homes"
 
 function SPEAKERS() {
   return (
@@ -36,6 +37,9 @@ function SPEAKERS() {
       </div>
 
       <Cart></Cart>
+
+      <Homes></Homes>
+
     </div>
   )
 }

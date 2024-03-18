@@ -3,6 +3,7 @@ import speakers from "../../assets/speakers.png"
 import remove from "../../assets/remov.png"
 import { Link } from "react-router-dom"
 import Cart from "../../components/cart"
+import Homes from "../../components/homes"
 
 
 
@@ -48,6 +49,7 @@ function Home() {
         </div>
       </div>
 
+      <Homes></Homes>
 
     </div>
   )

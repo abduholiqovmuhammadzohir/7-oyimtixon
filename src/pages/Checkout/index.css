@@ -1,0 +1,53 @@
+.order {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.order_content {
+  width: 540px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.order_content .chek{
+  width: 100%;
+  font-family: Manrope;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #D87D4A;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: all 0.5s;
+  margin-top: 46px;
+  margin-bottom: 48px;
+}
+
+.order_content .chek:hover {
+  cursor: pointer;
+  background-color: #fbaf85;
+}
+

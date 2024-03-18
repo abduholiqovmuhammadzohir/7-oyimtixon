@@ -6,9 +6,10 @@ import { SlBasket } from "react-icons/sl";
 import facebook from "../assets/facebook.svg"
 import twiter from "../assets/twiter.svg"
 import insta from "../assets/insta.svg"
-import bitmap from "../assets/bitmap1.png"
 import img from "../assets/imgmk.png"
-import { useSelector } from "react-redux"
+import img1 from "../assets/imgmk1.png"
+import img2 from "../assets/imgmk2.png"
+import { useDispatch, useSelector } from "react-redux"
 import "./index.css"
 
 function Layout({ children }) {
@@ -20,6 +21,17 @@ function Layout({ children }) {
     }
 
     const counter = useSelector(state => state.counter.counter)
+    const dispatch = useDispatch()
+
+    function increment() {
+        dispatch({ type: "ADD", payload: 1 })
+    }
+
+    function decrement() {
+        if (counter > 1) {
+            dispatch({ type: "REMOVE", payload: 1 })
+        }
+    }
 
     return (
         <div>
@@ -33,6 +45,7 @@ function Layout({ children }) {
                                 <h3>CART</h3>
                                 <p>Remove all</p>
                             </div>
+
                             <div className="cart">
                                 <div className="cart1">
                                     <img src={img} alt="" />
@@ -42,14 +55,41 @@ function Layout({ children }) {
                                     </div>
                                 </div>
                                 <div className="cart2">
-                                <button className="btn"><p>-</p><p>1</p><p>+</p></button>
+                                    <button className="btn"><p onClick={decrement}>-</p><p>{counter}</p><p onClick={increment}>+</p></button>
                                 </div>
                             </div>
+
+                            <div className="cart">
+                                <div className="cart1">
+                                    <img src={img1} alt="" />
+                                    <div>
+                                        <h2>XX59</h2>
+                                        <h4>$ 899</h4>
+                                    </div>
+                                </div>
+                                <div className="cart2">
+                                    <button className="btn"><p onClick={decrement}>-</p><p>{counter}</p><p onClick={increment}>+</p></button>
+                                </div>
+                            </div>
+
+                            <div className="cart">
+                                <div className="cart1">
+                                    <img src={img} alt="" />
+                                    <div>
+                                        <h2>YX1</h2>
+                                        <h4>$ 599</h4>
+                                    </div>
+                                </div>
+                                <div className="cart2">
+                                    <button className="btn"><p onClick={decrement}>-</p><p>{counter}</p><p onClick={increment}>+</p></button>
+                                </div>
+                            </div>
+
                             <div className="title1">
                                 <p>TOTAL</p>
                                 <h3>$ 5,396</h3>
                             </div>
-                            <button className='chek'>CHECKOUT</button>
+                            <button className='chek'><Link style={{ textDecoration: "none", color: "white" }} to="/checkout">CHECKOUT</Link></button>
                         </div>
                     </div>
 
@@ -74,26 +114,15 @@ function Layout({ children }) {
                     </div>
                     <div className={styles.icon}>
                         <h2 onClick={toggleModal}><SlBasket /></h2>
-                        <p>{counter}</p>
+                        <p>0</p>
                     </div>
 
                 </div>
-                <hr />
             </div>
 
             <div>
                 <div className={styles.home}>
                     {children}
-                </div>
-            </div>
-
-            <div className={styles.audio}>
-                <div className={styles.audio_title}>
-                    <h2>BRINGING YOU THE <span>BEST</span> AUDIO GEAR</h2>
-                    <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.</p>
-                </div>
-                <div className={styles.audio_img}>
-                    <img src={bitmap} alt="" />
                 </div>
             </div>
 

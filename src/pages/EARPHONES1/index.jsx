@@ -9,6 +9,8 @@ import like from "../../assets/like.png"
 import like2 from "../../assets/like2.png"
 import like3 from "../../assets/like3.png"
 import { useDispatch, useSelector } from "react-redux"
+import Homes from "../../components/homes"
+import Back from "../../components/back"
 
 function EARPHONES1() {
 
@@ -20,11 +22,14 @@ function EARPHONES1() {
     }
 
     function decrement() {
-        dispatch({ type: "REMOVE", payload: 1 })
+        if (counter > 1) {
+            dispatch({ type: "REMOVE", payload: 1 })
+        }
     }
 
     return (
         <div>
+            <Back></Back>
             <div className={styles.mark}>
                 <div className={styles.mark_img}>
                     <img src={mark} alt="" />
@@ -89,6 +94,8 @@ function EARPHONES1() {
             </div>
 
             <Cart></Cart>
+
+            <Homes></Homes>
 
         </div>
     )

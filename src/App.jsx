@@ -9,13 +9,13 @@ import HEADPHONES from './pages/HEADPHONES'
 import Layout from './layout/Layout'
 import EARPHONES from './pages/EARPHONES'
 import SPEAKERS from './pages/SPEAKERS'
-import Shop from './pages/Shop'
 import HEADPHONES1 from './pages/HEADPHONES1'
 import HEADPHONES2 from './pages/HEADPHONES2'
 import HEADPHONES3 from './pages/HEADPHONES3'
 import SPEAKERS1 from './pages/SPEAKERS1'
 import SPEAKERS2 from './pages/SPEAKERS2'
 import EARPHONES1 from './pages/EARPHONES1'
+import Checkout from './pages/Checkout'
 
 function App() {
 
@@ -77,13 +77,6 @@ function App() {
           </ProjectedRote>}>
         </Route>
 
-        <Route path='/earphones' element={
-          <ProjectedRote isAuthentication={token ? true : false}>
-            <Layout>
-              <Shop></Shop>
-            </Layout>
-          </ProjectedRote>}>
-        </Route>
 
         <Route path='/headphones1' element={
           <ProjectedRote isAuthentication={token ? true : false}>
@@ -129,6 +122,13 @@ function App() {
           <ProjectedRote isAuthentication={token ? true : false}>
             <Layout>
               <EARPHONES1></EARPHONES1>
+            </Layout>
+          </ProjectedRote>}>
+        </Route>
+        <Route path='/checkout' element={
+          <ProjectedRote isAuthentication={token ? true : false}>
+            <Layout>
+              <Checkout></Checkout>
             </Layout>
           </ProjectedRote>}>
         </Route>

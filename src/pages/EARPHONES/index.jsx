@@ -6,6 +6,7 @@ import strelka from "../../assets/strelka.svg"
 import e from "../../assets/e.png"
 import { Link } from "react-router-dom"
 import Cart from "../../components/cart"
+import Homes from "../../components/homes"
 
 function EARPHONES() {
   return (
@@ -27,6 +28,9 @@ function EARPHONES() {
       </div>
 
       <Cart></Cart>
+
+      <Homes></Homes>
+      
     </div>
   )
 }

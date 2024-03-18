@@ -8,7 +8,9 @@ import img2 from "../../assets/imag2.png"
 import like from "../../assets/like.png"
 import like2 from "../../assets/like2.png"
 import like3 from "../../assets/like3.png"
-import {useDispatch, useSelector} from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import Homes from "../../components/homes"
+import Back from "../../components/back"
 
 function HEADPHONES1() {
 
@@ -16,15 +18,18 @@ function HEADPHONES1() {
     const dispatch = useDispatch()
 
     function increment() {
-        dispatch({type:"ADD", payload:1})
+        dispatch({ type: "ADD", payload: 1 })
     }
 
     function decrement() {
-        dispatch({type:"REMOVE", payload:1})
+        if (counter > 1) {
+            dispatch({ type: "REMOVE", payload: 1 })
+        }
     }
 
     return (
         <div>
+            <Back></Back>
             <div className={styles.mark}>
                 <div className={styles.mark_img}>
                     <img src={mark} alt="" />
@@ -71,17 +76,17 @@ function HEADPHONES1() {
                 <h1>YOU MAY ALSO LIKE</h1>
                 <div className={styles.likes}>
                     <div className={styles.likes_cart}>
-                        <img src={like}  alt="" />
+                        <img src={like} alt="" />
                         <h2>XX99 MARK I</h2>
                         <button className={styles.btn}> <Link to="/headphones2" style={{ textDecoration: "none", color: "white" }}>SEE PRODUCT</Link></button>
                     </div>
                     <div className={styles.likes_cart}>
-                        <img src={like2}  alt="" />
+                        <img src={like2} alt="" />
                         <h2>XX99 MARK I</h2>
                         <button className={styles.btn}> <Link to="/headphones3" style={{ textDecoration: "none", color: "white" }}>SEE PRODUCT</Link></button>
                     </div>
                     <div className={styles.likes_cart}>
-                        <img src={like3}  alt="" />
+                        <img src={like3} alt="" />
                         <h2>XX99 MARK I</h2>
                         <button className={styles.btn}> <Link to="/speakers1" style={{ textDecoration: "none", color: "white" }}>SEE PRODUCT</Link></button>
                     </div>
@@ -89,6 +94,8 @@ function HEADPHONES1() {
             </div>
 
             <Cart></Cart>
+
+            <Homes></Homes>
 
         </div>
     )

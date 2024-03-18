@@ -1,0 +1,11 @@
+.back {
+    max-width: 1110px;
+    width: 100%;
+    margin: 79px auto;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    cursor: pointer;
+}

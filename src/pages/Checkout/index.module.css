@@ -1,0 +1,371 @@
+.container {
+    max-width: 1350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.check {
+    background-color: #F1F1F1;
+    padding-top: 38px;
+    padding-bottom: 141px;
+}
+
+.checkout {
+    border-radius: 15px;
+    width: 730px;
+    margin-left: 165px;
+    background-color: white;
+    padding: 54px 48px;
+}
+
+.checkout h1 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.1428571939468384px;
+    margin-bottom: 41px;
+}
+
+.billing h3 {
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.9285714030265808px;
+    color: rgba(216, 125, 74, 1);
+}
+
+.billing .input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.billing .input input {
+    padding-left: 24px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    width: 309px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 198, 198);
+    margin-top: 9px;
+}
+
+.billing .input label {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.2142857164144516px;
+}
+
+.billing .email_input input {
+    padding-left: 24px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    width: 309px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 198, 198);
+    margin-top: 9px;
+}
+
+.billing .email_input label {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.2142857164144516px;
+    margin-top: 24px;
+}
+
+.billing .email_input {
+    margin-top: 24px;
+    margin-bottom: 53px;
+}
+
+
+.info h3 {
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.9285714030265808px;
+    color: rgba(216, 125, 74, 1);
+}
+
+.info .addres_input label {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.2142857164144516px;
+}
+
+.info .addres_input input {
+    width: 100%;
+    padding-left: 24px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 198, 198);
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+
+
+.info .input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.info .input input {
+    padding-left: 24px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    width: 309px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 198, 198);
+    margin-top: 9px;
+}
+
+.info .input label {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.2142857164144516px;
+}
+
+.info .email_input input {
+    padding-left: 24px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    width: 309px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 198, 198);
+    margin-top: 9px;
+}
+
+.info .email_input label {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.2142857164144516px;
+    margin-top: 24px;
+}
+
+.info .email_input {
+    margin-top: 24px;
+    margin-bottom: 53px;
+}
+
+.payment h3 {
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.9285714030265808px;
+    margin-bottom: 16px;
+    color: rgba(216, 125, 74, 1);
+}
+
+.payment h4 {
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.2142857164144516px;
+}
+
+.method {
+    display: flex;
+    justify-content: space-between;
+}
+
+.method .money {
+    border: 1px solid rgb(202, 198, 198);
+    width: 309px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.method .money span {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.25px;
+}
+
+.method .cash span {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.25px;
+}
+
+.method .cash {
+    border: 1px solid rgb(202, 198, 198);
+    width: 309px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 16px;
+    border-radius: 8px;
+}
+
+.method .cash input {
+    margin-right: 16px;
+}
+
+.method .money input {
+    margin-right: 16px;
+}
+
+.summary {
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 32px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.title {
+    margin-bottom: 31px;
+    margin-top: 32px;
+}
+
+.title h3 {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.2857142686843872px;
+}
+
+.title p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+
+.title1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title1 h3 {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.2857142686843872px;
+}
+
+.title1 p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+
+.modal_content .chek {
+    width: 100%;
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #D87D4A;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.5s;
+    margin-bottom: 15px;
+}
+
+.modal_content .chek:hover {
+    cursor: pointer;
+    background-color: #fbaf85;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:24px;
+}
+
+.cart1 {
+    display: flex;
+    align-items: center;
+}
+
+.cart1 h2 {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-left: 16px;
+}
+
+.cart1 h4 {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.btn {
+    display: flex;
+    gap: 12px;
+    padding: 7px 11px;
+    border: none;
+}
+
+.cart p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.total h3 {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.total h4 {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: rgba(216, 125, 74, 1);
+}

@@ -1,4 +1,10 @@
 
+.cart_wrapper{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .carts {
     margin-bottom: 168px;
     padding-left: 165px;
@@ -46,3 +52,5 @@
 .cart_link:hover {
     color: #D87D4A;
 }
+
+

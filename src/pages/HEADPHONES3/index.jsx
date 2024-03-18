@@ -8,23 +8,29 @@ import img2 from "../../assets/img7.png"
 import like from "../../assets/img4.png"
 import like2 from "../../assets/like.png"
 import like3 from "../../assets/like3.png"
-import {useDispatch, useSelector} from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
+import Homes from "../../components/homes"
+import Back from "../../components/back"
 
 function HEADPHONES3() {
 
-    const counter = useSelector(state => state.counter.counter)
-    const dispatch = useDispatch()
+  const counter = useSelector(state => state.counter.counter)
+  const dispatch = useDispatch()
 
-    function increment() {
-        dispatch({type:"ADD", payload:1})
-    }
+  function increment() {
+    dispatch({ type: "ADD", payload: 1 })
+  }
 
-    function decrement() {
-        dispatch({type:"REMOVE", payload:1})
+  function decrement() {
+    if (counter > 1) {
+      dispatch({ type: "REMOVE", payload: 1 })
     }
+  }
 
   return (
     <div>
+      <Back></Back>
+
       <div className={styles.mark}>
         <div className={styles.mark_img}>
           <img src={mark} alt="" />
@@ -88,6 +94,8 @@ function HEADPHONES3() {
       </div>
 
       <Cart></Cart>
+
+      <Homes></Homes>
 
     </div>
   )
